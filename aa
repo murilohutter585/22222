@@ -8,11 +8,21 @@
 <body>
     <script>
         var nome = ["Murilo", "Eduardo", "Marcelo"];
-        var turma = ["1 Ano", "2 Ano", "3 Ano"];
+        var turma = ["1° Ano", "2° Ano", "3° Ano"];
         var tri1 = [70, 50, 70];
         var tri2 = [80, 50, 60];
         var tri3 = [80, 50, 70];
-    
+
+            function seleciona(localizaLista){
+                nomeComparado = document.localizaLista.NOME.value;
+                turmaComparado = document.localizaLista.TURMA.value;
+                    let i = 0;
+                    document.write("<table border=1>");
+
+                    document.write("</table>")
+
+                
+            }
 
 
     </script>
@@ -22,14 +32,19 @@
 
 
 
+
+
+
+
+
+
     <form name="localizaLista">
-        <table>
+        <table class="ab">
             <tr bgcolor="FKAGXJ">
                 <td width=40 align="center">Nome</td>
-                <td width=40 align="center"><input NAME="Nome" VALUE=""></td>
-
+                <td width=40 align="center"><input NAME="NOME" VALUE=""></td>
                 <td width=40 align="center">Turma</td>
-                <td width=40 align="center"><input NAME="Turma" VALUE=""></td>
+                <td width=40 align="center"><input NAME="TURMA" VALUE=""></td>
             </tr>
             <tr>
                 <td width=80 align="center" colspan="4" bgcolor="FKAGXJ">
@@ -37,10 +52,6 @@
                 </td>
             </tr>
         </table>
-
     </form>
-
-
-
 </body>
 </html>
