@@ -6,9 +6,10 @@
     <title>Localizar</title>
 </head>
 <body>
+    <img src="" alt="">
     <script>
         var nome = ["Murilo", "Eduardo", "Marcelo"];
-        var turma = ["1° Ano", "2° Ano", "3° Ano"];
+        var turma = ["2° Ano", "1° Ano", "3° Ano"];
         var tri1 = [70, 50, 70];
         var tri2 = [80, 50, 60];
         var tri3 = [80, 50, 70];
@@ -20,25 +21,27 @@
                     document.write("<table border=1>");
                         for(i = 0; i < nome.length; i++){
 
-                        if(nome[i] == nomeComparado){
-                            document.write("<tr>");
+                        if(nome[i].indexOf == nomeComparado !== -1 ||
+                        turma[i].indexOf(turmaComparado) !== -1
+                        
+                        ){ 
+                        document.write("<tr>");
                             document.write("<td>");
-                                document.write("Nome: " + nome[i]);
-                            document.write("</tr>");
+                            document.write("Nome: " + nome[i]);
                             document.write("</td>");
 
+                        
                             document.write("<td>");
-                                document.write("Turma: " + turma[i]);
+                            document.write("Turma: " + turma[i]);
                             document.write("</td>");
+
+                        document.write("</tr>");
                         }
 
                         }
 
-                    document.write("</table>"); 
-
-                
+                    document.write("</table>");
             }
-
 
     </script>
     <form name="localizaLista">
